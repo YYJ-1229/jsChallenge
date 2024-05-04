@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/asset/mushrooms.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>LIFE FARMER</title>
+  </head>
+  <body>
+    <div id="login">
+      <form id="loginForm" class="hidden">
+        <input type="text" placeholder="Enter your NAME" required />
+      </form>
+      <h1 id="userName" class="hidden"></h1>
+    </div>
+
+    <div id="clock">
+      <h1>00:00</h1>
+    </div>
+
+    <div id="weather" class="weather">
+      <span id="name" class="location">WEATHER</span>
+      <hr />
+      <div id="weatherImage" class="weatherImage"></div>
+    </div>
+
+    <div id="todoList">
+      <form id="todo-form">
+        <input type="text" class="input" placeholder="Enter your TODOS" />
+      </form>
+      <table id="todo-list" class="todoTable">
+        <tr class="titleRow">
+          <th>DONE</th>
+          <th>TODO</th>
+          <th>DELETE</th>
+        </tr>
+      </table>
+    </div>
+    <script src="./src/js/todo.js"></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
