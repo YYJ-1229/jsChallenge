@@ -55,7 +55,7 @@ function onGeo(position) {
 
       name.innerText = data.name;
       const weatherImage = document.createElement("img");
-      weatherImage.src = `src/asset/weather/${data.weather[0].main}.svg`;
+      weatherImage.src = `./src/asset/weather/${data.weather[0].main}.svg`;
       weatherDocument.appendChild(weatherImage);
     });
   console.log(url);
@@ -69,5 +69,5 @@ navigator.geolocation.getCurrentPosition(onGeo, onGeoError);
 // background
 
 const rand = Math.floor(Math.random() * 5);
-const image = `src/asset/background/${rand}.jpeg`;
+const image = `./src/asset/background/${rand}.jpeg`;
 document.body.style.backgroundImage = `url(${image})`;
