@@ -68,6 +68,6 @@ navigator.geolocation.getCurrentPosition(onGeo, onGeoError);
 
 // background
 
-const rand = Math.floor(Math.random() * 5);
+const rand = Math.floor(Math.random() * 4);
 const image = `./src/asset/background/${rand}.jpeg`;
 document.body.style.backgroundImage = `url(${image})`;
