@@ -27,7 +27,7 @@ function statusTodo(event) {
 
   if (button.name === "done") {
     button.name = "yet";
-    img.src = "/src/asset/yet.svg";
+    img.src = "src/asset/yet.svg";
   } else {
     img.src = "src/asset/done.svg";
     button.name = "done";
@@ -51,7 +51,7 @@ function paintToDo(newTodoObj) {
   const stateButton = document.createElement("button");
   stateButton.name = newTodoObj.status;
   const stateImage = document.createElement("img");
-  stateImage.src = `/src/asset/${newTodoObj.status}.svg`;
+  stateImage.src = `src/asset/${newTodoObj.status}.svg`;
   stateButton.appendChild(stateImage);
   stateButton.classList.add("checkbox");
   tdStatus.appendChild(stateButton);
@@ -66,7 +66,7 @@ function paintToDo(newTodoObj) {
   const tdDelete = document.createElement("td");
   const deleteButton = document.createElement("button");
   const deleteImage = document.createElement("img");
-  deleteImage.src = "/src/asset/shovel.svg";
+  deleteImage.src = "src/asset/shovel.svg";
   deleteImage.classList.add("img");
   deleteButton.appendChild(deleteImage);
   deleteButton.classList.add("checkbox");
