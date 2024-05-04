@@ -91,3 +91,16 @@ body {
   src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
     format("opentype");
 }
+
+@media screen and (min-width: 300px) {
+  body {
+    display: grid;
+    justify-items: center;
+  }
+  input {
+    width: 300px;
+    height: 40px;
+    border: 3px solid black;
+    font-family: "DNFBitBitv2";
+  }
+}
